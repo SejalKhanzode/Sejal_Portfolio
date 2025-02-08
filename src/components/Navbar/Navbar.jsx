@@ -7,7 +7,6 @@ import { PiReadCvLogoFill } from "react-icons/pi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Prevent scrolling when menu is open (for mobile)
   useEffect(() => {
     if (isOpen) {
       document.body.classList.add("overflow-hidden");
@@ -22,9 +21,7 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Navbar - Fixed at the Top for Desktop */}
       <div className="fixed pl-3 pr-3 top-0 left-0 w-full border bg-[#303030]/100 border-b-white  z-100 lg:flex lg:items-center lg:justify-between lg:px-8 lg:py-4">
-        {/* Menu Icon (Top-Left for Mobile) */}
         <div className="absolute top-4 left-4 z-50 lg:hidden">
           {isOpen ? (
             <CiMenuFries onClick={toggleMenu} className="text-white cursor-pointer text-2xl" />
@@ -33,7 +30,6 @@ const Navbar = () => {
           )}
         </div>
 
-        {/* Resume Button (Top-Right) */}
         <div className="absolute top-4 right-4 z-50">
   <button
     className="bg-[#BB8DEA] text-white py-2 px-4 rounded-lg text-lg font-bold md:text-1xl mr-3 flex items-center"
@@ -43,15 +39,12 @@ const Navbar = () => {
       );
     }}
   >
-    {/* Show Icon on Mobile */}
     <PiReadCvLogoFill className="text-2xl md:hidden" />
 
-    {/* Show "Resume" Text on Desktop */}
     <span className="hidden md:inline-flex">Resume</span>
   </button>
 </div>
 
-        {/* Fullscreen Navbar for Mobile & Fixed Navbar for Desktop */}
         <div
           className={`fixed left-0 h-full w-full bg-black bg-opacity-80 flex flex-col items-center justify-center transition-transform duration-700 ease-in-out ${
             isOpen ? "translate-x-0" : "-translate-x-full"
