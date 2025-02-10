@@ -11,7 +11,6 @@ import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <div className="h-auto bg-gradient-to-r from-[#0d0d0d] to-50% to-[#303030] ">
-      {/* <div className="max-w-screen-xl mx-auto px-16"> */}
       <Navbar />
       <Home />
       <About />
@@ -20,7 +19,7 @@ function App() {
       <Project />
       <Education />
       <Contact />
-      {/* </div> */}
+      
     </div>
   );
 }

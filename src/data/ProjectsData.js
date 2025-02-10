@@ -19,7 +19,7 @@ const ProjectsData = [
             {
                 src: globe,
                 name: "Website Link",
-                link: "https://skill-flare.vercel.app/",
+                link: "https://portfolio-sejalkhanzode.vercel.app/",
               },
           {
             src: github,
