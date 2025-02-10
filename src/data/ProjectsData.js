@@ -24,7 +24,7 @@ const ProjectsData = [
           {
             src: github,
             name: "Github Link",
-            link: "https://github.com/SejalKhanzode/Supremacy",
+            link: "https://github.com/SejalKhanzode/Sejal_Portfolio",
           },
         ],
         main: [
