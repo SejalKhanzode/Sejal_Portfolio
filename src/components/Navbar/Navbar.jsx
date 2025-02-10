@@ -32,7 +32,7 @@ const Navbar = () => {
 
         <div className="absolute top-4 right-4 z-50">
   <button
-    className="bg-[#BB8DEA] text-white py-2 px-4 rounded-lg text-lg font-bold md:text-1xl mr-3 flex items-center"
+    className="bg-[#BB8DEA] text-white py-2 px-4 rounded-lg text-lg font-bold md:text-1xl mr-3 flex items-center "
     onClick={() => {
       window.open(
         "https://drive.google.com/file/d/1zaAfWjiHAkvjgKptZyPgFMOA3wKkHXNb/view?usp=sharing"

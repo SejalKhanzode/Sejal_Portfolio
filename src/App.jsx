@@ -1,34 +1,27 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./components/HomeSection/Home";
+import About from "./components/About/About";
+import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience";
+import Project from "./components/Project/Project";
+import Education from "./components/Education/Education";
+import Contact from "./components/Contact/Contact";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1 className="text-red-400">Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="h-auto bg-gradient-to-r from-[#0d0d0d] to-50% to-[#303030] ">
+      {/* <div className="max-w-screen-xl mx-auto px-16"> */}
+      <Navbar />
+      <Home />
+      <About />
+      <Experience />
+      <Skills />
+      <Project />
+      <Education />
+      <Contact />
+      {/* </div> */}
+    </div>
   );
 }
 
