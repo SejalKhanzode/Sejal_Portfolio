@@ -14,7 +14,7 @@ const ProjectsData = [
     {
         icon: portfolio,
         name: "Portfolio",
-        duration: "10/2024-01/2025",
+        duration: "01/2025",
         links: [
             {
                 src: globe,
