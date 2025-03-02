@@ -34,7 +34,7 @@ export default function Contact() {
   return (
     <section id="contact" className="flex flex-col justify-between bg-[#9747FF] py-10 px-4 sm:px-0 lg:px-24">
       <p className="text-white text-3xl sm:text-4xl font-bold pb-8">
-      Wanna react me ?
+      Wanna reach me ?
       </p>
 
       <form
